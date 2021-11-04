@@ -1,0 +1,14 @@
+mixin product(title='Gavaya',img='pizza_gavaya.png',price='45,000',status=true,pict='cheese.png') 
+    .col-lg-6.col-sm-12
+        .product__box
+            if status
+                .product__status 
+                    img(src="assets/img/fire.png", alt="")
+            img.product__img(src="assets/img/"+img, alt="")
+            .product__info
+                .product__title 
+                    | #{title}
+                    img(src="assets/img/"+pict, alt="")
+                .product__text Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле
+                .product__price #{price} UZS
+                button.product__cart +

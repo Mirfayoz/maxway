@@ -1,0 +1,43 @@
+.head 
+    header.header#header 
+        .container
+            a.header__logo(href="#header")
+                img(src="assets/img/logo.png", alt="")
+            ul.header__menu
+                li: a(href="#").link Menyu 
+                li: a(href="#").link Bolalar uchun 
+                li: a(href="#").link Filiallar
+            .header__contact
+                a.header__phone(href="tel:998712005400") 
+                    img(src="assets/img/phone.png", alt="") 
+                    span
+                        | (+99871)
+                        b 200-54-00
+                a.header__cart(href="#") 
+                    span.header__count 
+                        img(src="assets/img/cart.png", alt="")
+                        span.count 3
+                    span.header__cart--span
+                        span.header__ctitle Korzina
+                        span.header__price 125,400 UZS
+    section.slider
+        .container
+            .slider__left
+                .slider__title Siz izlagan mazzali ta’mlar
+                .slider__text When an unknown printer took a galley of type <br> scrambled it to make a type specimen 
+                .slider__row
+                    .col-lg-6.col-sm-12
+                        .slider__box(style='background-image:url(assets/img/newpro.png)')
+                            .slider__btitle 
+                                img(src="assets/img/fire.png", alt="")
+                                | Yangi
+                            .slider__bottom.yellow Pit <br> -sa
+                    .col-lg-6.col-sm-12
+                        .slider__box(style='background-image:url(assets/img/bestpro.png)')
+                            .slider__btitle 
+                                img(src="assets/img/rocket.png", alt="")
+                                | Ko’p sotilgan
+                            .slider__bottom.violet Kom <br> -bo
+            img(src="assets/img/bigburger.png", alt="").slider__img
+
+

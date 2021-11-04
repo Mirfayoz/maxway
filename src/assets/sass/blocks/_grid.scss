@@ -1,0 +1,31 @@
+@media (min-width:768px){
+    $i: 1;
+    @while($i<=12){
+        .col-md-#{$i}{
+            @include fb(percentage($i/12));
+            padding: 0px 15px;
+        }
+        $i: $i+1;
+    }
+}
+@media (min-width:992px){
+    $i: 1;
+    @while($i<=12){
+        .col-lg-#{$i}{
+            @include fb(percentage($i/12));
+            padding: 0px 15px;
+        }
+        $i: $i+1;
+    }
+}
+
+@media (max-width:767px){
+    $i: 1;
+    @while($i<=12){
+        .col-sm-#{$i}{
+            @include fb(percentage($i/12));
+            padding: 0px 15px;
+        }
+        $i: $i+1;
+    }
+}

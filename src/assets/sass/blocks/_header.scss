@@ -1,0 +1,98 @@
+.header {
+    padding-top: 23px;
+    .container {
+        @include df();
+        align-items: center;
+    }
+    &__menu {
+        margin-left: auto;
+        display: flex;
+        list-style-type: none;
+        .link {
+            font-size: 14px;
+            color: #222124;
+            margin-right: 40px;
+            display: inline-block;
+        }
+    }
+    &__contact {
+        position: relative;
+        padding-left: 38px;
+        display: flex;
+        &:before {
+            content: '';
+            width: 60vw;
+            height: 100vh;
+            background-color: $violet;
+            position: absolute;
+            left: 0;
+            top: -29px;
+            z-index: -1;
+        }
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-family: 'inter-r';
+        span {
+            b {
+                display: block;
+            }
+        }
+        img {
+            margin-right: 16px;
+        }
+        span {
+            font-size: 12px;
+        }
+        b {
+            font-weight: normal;
+            font-family: 'inter-b';
+            font-size: 24px;
+        }
+    }
+    &__cart {
+        margin-left: 40px;
+        padding-left: 40px;
+        border-left: 1px solid #fff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        &--span {
+            span {
+                display: block;
+            }
+        }
+    }   
+    &__count {
+        position: relative;
+        display: inline-block;
+        margin-right: 18px;
+        .count {
+            position: absolute;
+            border: 2px solid $violet;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $yellow;
+            font-size: 10px;
+            font-family: 'inter-b';
+            text-align: center;
+            line-height: 16px;
+            right: -9px;
+            top: -7px;
+        }
+    }
+    &__ctitle {
+        font-size: 24px;
+    }
+    &__price {
+        font-family: 'inter-r';
+    }
+}
+
+.head {
+    overflow: hidden;
+    height: 100vh;
+}

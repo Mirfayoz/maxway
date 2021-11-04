@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$container: 1091px;
+$violet: #800A7A;
+$yellow: #F1B301;
+$grey: #979797;
+
+@import 'blocks/mixin';
+@import 'blocks/grid';
+
+@font-face {
+    font-family: 'inter-r';
+    src: url('../fonts/Inter-Regular.ttf');
+}
+@font-face {
+    font-family: 'inter-b';
+    src: url('../fonts/Inter-Bold.ttf');
+}
+@font-face {
+    font-family: 'inter-bl';
+    src: url('../fonts/Inter-Black.ttf');
+}
+@font-face {
+    font-family: 'inter-m';
+    src: url('../fonts/Inter-Medium.ttf');
+}
+a {
+    text-decoration: none;
+    color: #222124;
+}
+button {
+    cursor: pointer;
+}
+.container {
+    max-width: $container;
+    margin: auto;
+}
+.row {
+    @include df();
+    margin-left: -15px;
+    margin-right: -15px;
+}
+body {
+    font-family: 'inter-r';
+}
+
+
+@import 'blocks/header';
+@import 'blocks/slider';
+@import 'blocks/main';
+@import 'blocks/footer';

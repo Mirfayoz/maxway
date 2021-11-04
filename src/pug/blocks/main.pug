@@ -1,0 +1,42 @@
+section.wrapper
+    .container 
+        .filtr
+            button.active Barchasi
+            button Pitsa
+            button Burger
+            button Kombo
+            button Salat
+            button Shirinliklar
+            button Ichimliklar
+            button.filtr__btn 
+                img(src="assets/img/filtr.png", alt="")
+                | Filtr
+        .product
+            .bigtitle Pitsa
+            .row 
+                +product
+                +product('Mexica','pizza_mexica.png','53,000',false)
+                +product('Hot achchiko','pizza_achchiko.png','64,000',false,'vegan.png')
+                +product('Mexica','pizza_mexica2.png','45,000',false,'')
+                +product('Apocalipo','pizza_achchiko.png','64,000',false,'hot.png')
+                +product
+        .product
+            .bigtitle Burger
+            .row 
+                +product('Cheeseburger','cheeseburger.png','23,000',true,'cheese.png')
+                +product('Chili burger','cheeseburger.png','23,000',false,'hot.png')
+                +product('Hamburger','cheeseburger.png','23,000',true,'')
+                +product('Double Burger','cheeseburger.png','23,000',false,'')
+        .product
+            .bigtitle Kombo
+            .row 
+                +product('Kombo-1','kombo-1.png','25,000',false,'')
+                +product('Kombo-2','kombo-2.png','23,000',false,'')
+                +product('Kombo-3','kombo-1.png','25,000',false,'')
+        .product
+            .bigtitle Ichimliklar
+            .row 
+                +product('Sprite 1L','sprite.png','6,000',false,'')
+                +product('Coca cola 1,5L','coca.png','9,000',false,'')
+                +product('Fanta 1L','fanta.png','6,000',false,'')
+
